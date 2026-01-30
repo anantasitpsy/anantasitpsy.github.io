@@ -26,13 +26,13 @@
         }
 
         header {
-            border-bottom: 2px solid #007aff;
+            border-bottom: 2px solid #333; /* สีดำ/เทาเข้ม แบบเป็นกลาง */
             padding-bottom: 20px;
             margin-bottom: 20px;
         }
 
         h1 {
-            color: #0056b3;
+            color: #2c3e50;
             margin: 0;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -50,18 +50,18 @@
         }
 
         .contact-info i {
-            color: #007aff;
+            color: #2c3e50;
             margin-right: 5px;
         }
 
         h2 {
             color: #333;
             font-size: 1.2em;
-            border-left: 5px solid #007aff;
+            border-left: 5px solid #2c3e50;
             padding-left: 10px;
             margin-top: 30px;
             margin-bottom: 15px;
-            background-color: #f9f9f9;
+            background-color: #f8f9fa;
             padding-top: 5px;
             padding-bottom: 5px;
         }
@@ -99,7 +99,7 @@
 
         .skill-category {
             font-weight: bold;
-            color: #0056b3;
+            color: #2c3e50;
             display: block;
             margin-bottom: 3px;
         }
@@ -111,11 +111,11 @@
             color: #666;
             font-size: 0.9em;
         }
-        .back-btn:hover { color: #007aff; }
+        .back-btn:hover { color: #000; }
 
         .print-btn {
             float: right;
-            background: #007aff;
+            background: #2c3e50;
             color: white;
             border: none;
             padding: 5px 15px;
@@ -123,7 +123,7 @@
             cursor: pointer;
             font-size: 0.9em;
         }
-        .print-btn:hover { background: #0056b3; }
+        .print-btn:hover { background: #1a252f; }
 
         @media print {
             body { background-color: white; }
@@ -147,16 +147,17 @@
             <h1>Anantasit Phuengsuya</h1>
             <p style="margin: 5px 0; font-size: 1.1em;">Network, Cloud & Security Engineering Student</p>
             <div class="contact-info">
-                <span><i class="fa-solid fa-phone"></i> (+66) 94-783-1001</span> 
+                <span><i class="fa-solid fa-phone"></i> (+66) XX-XXX-XXXX</span> 
                 <span><i class="fa-solid fa-envelope"></i> 66011514@kmitl.ac.th</span>
                 <span><i class="fa-solid fa-location-dot"></i> Lat Krabang, Bangkok</span>
                 <span><i class="fa-brands fa-linkedin"></i> linkedin.com/in/anantasit</span>
+                <span><i class="fa-solid fa-globe"></i> resume.anantasit.com</span>
             </div>
         </header>
 
         <section>
             <h2>Objective</h2>
-            <p>Dedicated 3rd-year Communications and Network Engineering student with a robust skill set in <strong>Cloud Computing</strong>, <strong>Network Security</strong>, and <strong>IoT</strong>. Certified in both <strong>Huawei HCIA-Cloud</strong> and <strong>HCIA-Security</strong>. Seeking an internship or entry-level position as a Network/Security Engineer to apply expertise in infrastructure, cybersecurity protocols, and system monitoring.</p>
+            <p>Dedicated 3rd-year Communications and Network Engineering student with a strong passion for <strong>Infrastructure, Cloud Computing, and Network Security</strong>. Certified in <strong>Huawei HCIA-Cloud & Security</strong>. Possess a solid understanding of <strong>OSI 7 Layers</strong>, <strong>IoT Solutions</strong>, and <strong>System Monitoring</strong>. Seeking an internship or entry-level position to apply technical skills in Python, Network Protocols, and Hardware Integration.</p>
         </section>
 
         <section>
@@ -176,10 +177,10 @@
         <section>
             <h2>Technical Skills</h2>
             <div class="skills-grid">
-                <div><span class="skill-category">Cloud & Security:</span> Huawei FusionCompute, Firewall & VPN Concepts, Network Security Policies, Cloud Architecture.</div>
-                <div><span class="skill-category">Networking:</span> TCP/IP, UDP, HTTP/HTTPS, Port Configuration, OSI Layer Troubleshooting, Wireshark.</div>
-                <div><span class="skill-category">Programming:</span> Python (Automation), C++ (Embedded/Firmware), SQL.</div>
-                <div><span class="skill-category">Hardware/IoT:</span> ESP32, Freematics ONE+, OBD2 Interface, CANbus Standard.</div>
+                <div><span class="skill-category">Cloud & Infrastructure:</span> Huawei FusionCompute, Cloud Architecture (HCIA), Virtualization, Data Center Concepts.</div>
+                <div><span class="skill-category">Networking & Security:</span> TCP/IP, UDP, Firewall Configuration, VPN, Port Configuration, OSI Layer Troubleshooting.</div>
+                <div><span class="skill-category">IoT & Monitoring:</span> Real-time System Monitoring, Sensor Integration, ESP32, CANbus, SCADA Concepts.</div>
+                <div><span class="skill-category">Programming & Tools:</span> Python (Automation), C++ (Firmware), SQL, Git, Linux Command Line.</div>
             </div>
         </section>
 
@@ -187,15 +188,15 @@
             <h2>Projects</h2>
             
             <div class="job-item">
-                <div class="job-title">Vehicle Telemetry & OBD2 Data System (Year 3 Project)</div>
+                <div class="job-title">Vehicle Telemetry & IoT Monitoring System (Year 3 Project)</div>
                 <div class="company-date">
-                    <span>IoT & Network Engineering Project</span>
+                    <span>IoT & Network Reliability Project</span>
                     <span>2025 - Present</span>
                 </div>
                 <ul>
-                    <li>Engineered an IoT monitoring system using <strong>ESP32</strong> to extract vehicle ECU data via <strong>CANbus</strong>.</li>
-                    <li>Programmed firmware to transmit telemetry data to a Traccar Server using <strong>TCP (Port 5055)</strong> for reliability and <strong>UDP</strong> for real-time updates.</li>
-                    <li>Optimized Application Layer data formatting (JSON/String) to ensure accurate parsing of Speed and RPM over HTTP/HTTPS.</li>
+                    <li>Engineered a real-time monitoring system using <strong>ESP32</strong> to extract vehicle ECU data via <strong>CANbus</strong>.</li>
+                    <li>Programmed firmware to transmit telemetry data to a central server using <strong>TCP (Port 5055)</strong> for reliability and <strong>UDP</strong> for real-time updates.</li>
+                    <li>Optimized data transmission protocols to ensure accurate tracking of Speed and RPM over HTTP/HTTPS.</li>
                 </ul>
             </div>
 
@@ -206,8 +207,8 @@
                     <span>2023</span>
                 </div>
                 <ul>
-                    <li>Designed an automated barrier gate system integrating hardware sensors with software logic.</li>
-                    <li>Implemented <strong>License Plate Recognition (LPR)</strong> using <strong>Python (OpenCV)</strong> to verify vehicles against a SQL database.</li>
+                    <li>Designed an automated facility access system integrating hardware sensors with software logic.</li>
+                    <li>Implemented <strong>License Plate Recognition (LPR)</strong> using Python (OpenCV) to verify authorized vehicles against a database.</li>
                 </ul>
             </div>
         </section>
@@ -222,7 +223,7 @@
                     <span>Jan 2026</span>
                 </div>
                 <ul>
-                    <li>Completed training on network security architecture, firewalls, VPN technologies, and intrusion prevention systems.</li>
+                    <li>Completed training on Network Security architecture, Firewall configuration, VPN technologies, and System Protection.</li>
                 </ul>
             </div>
 
@@ -233,7 +234,7 @@
                     <span>Dec 2025</span>
                 </div>
                 <ul>
-                    <li>Completed comprehensive training on Cloud Computing technology, virtualization (FusionCompute), and storage architecture.</li>
+                    <li>Completed comprehensive training on Cloud Infrastructure, Virtualization (FusionCompute), and Storage architecture.</li>
                 </ul>
             </div>
         </section>
